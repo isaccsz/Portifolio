@@ -1,0 +1,390 @@
+/* Seção apresentação */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    min-width: 340px;
+    min-height: 550px;
+}
+
+body {
+    font-size: 30px; /* Tamanho da fonte relativo à largura da tela */
+    background: #003;
+    
+}
+
+#index-container {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+header {
+    opacity: 1;
+    width: 100%;
+    height: 10vh;
+    min-height: 3.5px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: radial-gradient(94.4% 94.4% at 49.87% 49.6%, #6A0DAD 0.55%, #000 100%);
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.hamburguer img{
+    width: 5em;
+    height: 5em;
+}
+
+.hamburguer {
+    width: 5em;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: purple;
+    transition: .5s all;
+}
+
+a:active{
+    color: white;
+    transition: .5s all;
+}
+
+nav {
+    width: 50%;
+}
+
+header ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header li {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px #000;
+    font-family: Roboto;
+    font-size: 1em; /* Tamanho da fonte relativo à largura da tela */
+    font-weight: 400;
+}
+
+.content-holder{
+    margin: 0 auto;
+    height: 90vh;
+}
+
+.presentation-container {
+    height: 40%;
+    width: 100%;
+    position: relative;
+}
+
+.presentation-container h1 {
+    position: relative;
+    top: 1em;
+    left: 1.5em;
+    width: 45%;
+    max-width: 400px;
+    font-size: 3.5em; /* Tamanho da fonte relativo à largura da tela */
+    font-family: VT323;
+    font-weight: 400;
+    text-shadow: 3px 4px 4px #000;
+}
+
+.presentation-container img {
+    position: absolute;
+    bottom: 1px;
+    right: 5em;
+    width: 12em;
+    max-width: 230px;
+    z-index: 0;
+}
+
+.sphere {
+    border-radius: 50%;
+    background: #0D6AAD;
+    position: absolute;
+    z-index: -1;
+}
+
+.sphere-1 {
+    width: 16em; /* Largura da esfera relativa à largura da tela */
+    height: 16em; /* Altura da esfera relativa à largura da tela */
+    max-width: 375px; /* Define o tamanho máximo para o tamanho do iPhone 12 */
+    max-height: 375px;
+    right: 0px;
+    bottom: 7.5vh; /* Posição inferior da esfera relativa à largura da tela */
+}
+
+.sphere-2 {
+    width: 20em; /* Largura da esfera relativa à largura da tela */
+    height: 20em; /* Altura da esfera relativa à largura da tela */
+    max-width: 375px;
+    max-height: 375px; /* Define o tamanho máximo para o tamanho do iPhone 12 */
+    right: 10vw; /* Posição direita da esfera relativa à largura da tela */
+    bottom: -6vw; /* Posição inferior da esfera relativa à largura da tela */
+}
+
+
+article {
+    margin: 0 auto;
+    height: 60%;
+    z-index: 2;
+    border-radius: 2em;/* Raio do border-radius relativo à largura da tela */
+    background: radial-gradient(104.75% 104.75% at 49.87% 46.47%, #6A0DAD 0.55%, #000 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-width: 350px;
+    min-height: 300px;
+}
+
+article button {
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 2em; /* Tamanho da fonte relativo à largura da tela */
+    width: 30vw; /* Largura do botão relativa à largura da tela */
+    height: 10vh;
+    flex-shrink: 0;
+    border-radius: 2.5vw; /* Raio do border-radius relativo à largura da tela */
+    border: 2px solid #FFF;
+    background: #007F7F;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    text-align: center;
+    font-family: VT323;
+    font-weight: 400;
+}
+
+article button:hover{
+    
+    background-color: purple;
+    transition: .5s all;
+}
+
+.scroll:active {
+    background: #0D6AAD;
+    transition: .5s all;
+}
+
+.presentation-text {
+    margin: 0 auto;
+    font-family: VT323;
+    font-size: 2.4em;
+    text-shadow: 2px 2px black;
+    min-height: 30%;
+    width: 350px;
+}
+
+/* Seção Projetos */
+
+#projects-container {
+    width: 100vw;
+    height: 85vh;
+    display: block;
+}
+
+h2 {
+    color: #FFF;
+    font-size: 3em; /* Tamanho da fonte relativo à largura da tela */
+    padding: 0em 0em .3em 1em;
+    margin-top: 1em;
+}
+
+.wrapper {
+    height: 75vh;
+    width: 74vw;
+    display: grid;
+    margin: 0 auto;
+}
+
+.expand {
+    z-index: -1;
+    display: block;
+    width: 250px;
+    max-height: 300px;
+    border-radius: 2.5vw; /* Raio do border-radius relativo à largura da tela */
+    box-shadow: 3px 5px 4px 0px #000;
+}
+
+.color-purple {
+    margin: 0 auto;
+    background: #6A0DAD;
+}
+
+.color-red {
+    margin: 0 auto;
+    background: #AD0D64;
+}
+
+.expand h3 {
+    padding: 1vw 0 0 1vw; /* Padding relativo à largura da tela */
+    color: #FFF;
+    text-shadow: 2px 2px 4px #000;
+    font-family: Roboto;
+    font-size: 1.5em; /* Tamanho da fonte relativo à largura da tela */
+    font-weight: 700;
+}
+
+.expand p {
+    color: #FFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.50);
+    font-family: Roboto;
+    font-size: 1em; /* Tamanho da fonte relativo à largura da tela */
+    font-weight: 400;
+    padding: .5vw 3vw 0 2vw; /* Padding relativo à largura da tela */
+}
+
+/* About section */
+
+#about-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about-container-wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    height: 70vh;
+}
+
+.card {
+    z-index: -1;
+    color: black;
+    width: 40vw;
+    height: 50vh;
+    min-height: max-content;
+    max-height: 300px;
+    max-width: 500px;
+    min-width: 330px;
+    border-radius: 2.5vw; /* Raio do border-radius relativo à largura da tela */
+    box-shadow: 3px 5px 4px 0px #000;
+    position: relative;
+    text-align: left;
+    font-size: 1.3em; /* Tamanho da fonte relativo à largura da tela */
+    padding-top: 1.4vw; /* Padding relativo à largura da tela */
+    margin: 0 auto;
+}
+
+.purple-card {
+    background: #6A0DAD;
+}
+
+.red-card {
+    background: #AD0D64;
+}
+
+.animation {
+    width: 8em; /* Largura da animação relativa à largura da tela */
+    height: 5em; /* Altura da animação relativa à largura da tela */
+    border-radius: 2.5vw; /* Raio do border-radius relativo à largura da tela */
+    margin-left: 2vw; /* Margem esquerda relativa à largura da tela */
+    margin-right: 2vw; /* Margem direita relativa à largura da tela */
+    float: left;
+}
+
+.red-animation {
+    border-radius: 2.5vw; /* Raio do border-radius relativo à largura da tela */
+    background: #AD0D64;
+    box-shadow: 3px 5px 4px 0px #000;
+}
+
+.purple-animation {
+    border-radius: 2.5vw; /* Raio do border-radius relativo à largura da tela */
+    background: #6A0DAD;
+    box-shadow: 3px 5px 4px 0px #000;
+}
+
+#about-container p {
+    width: 95%;
+    margin: 0 auto;
+}
+
+span {
+    padding: .04em; /* Padding relativo à largura da tela */
+    background-color: white;
+}
+
+#contact-container{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 10vh;
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.connections ul{
+    list-style-type: none;
+}
+
+.connections ul li{
+    display: inline-block;
+}
+
+@media only screen and (max-width: 849px) and (min-width: 100px){
+    body {
+        font-size: 10px;
+      }
+      .content-holder{
+          width: 100vw;
+      }
+      .card{
+        max-height: 200px;
+      }
+}
+
+@media only screen and (max-width: 2500px) and  (min-width: 850px){
+    body {
+        font-size: 15px;
+      }
+      .content-holder{
+          width: 850px;
+      }
+      .presentation-text{
+        width: 450px;
+      }
+      .wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        row-gap: 1em;
+        column-gap: 1em;
+        justify-content: center;
+      }
+      .about-container-wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        row-gap: 1em;
+        column-gap: 1em;
+        justify-content: center;
+      }
+}
